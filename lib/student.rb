@@ -4,7 +4,7 @@ class Student
 
   @@all = []
 
-  def initialize(student_hash=nil)
+  def initialize(student_hash={})
 
     @name = student_hash[:name] || nil
     @location =  student_hash[:location] || nil
