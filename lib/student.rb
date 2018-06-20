@@ -20,10 +20,10 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    Student.new
     students_array.each do |ele|
       @name = ele[:name]
       @location = ele[:location]
+
     end
 
   end
