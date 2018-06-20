@@ -34,7 +34,8 @@ class Student
 
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |ele|
-      binding.pry
+
+
       self.bio = ele[:bio]
       self.twitter = ele[:twitter]
       self.blog = ele[:blog]
