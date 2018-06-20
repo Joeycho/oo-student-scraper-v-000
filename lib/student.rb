@@ -35,12 +35,17 @@ class Student
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |ele|
 
-
+      if ele.has_key?('bio')
       self.bio = ele[:bio]
+    elsif ele.has_key?('twitter')
       self.twitter = ele[:twitter]
+    elsif ele.has_key?('blog')
       self.blog = ele[:blog]
+    elsif ele.has_key?('github')
       self.github = ele[:github]
+    elsif ele.has_key?('profile_quote')
       self.profile_quote = ele[:profile_quote]
+    elsif ele.has_key?('linkedin')
       self.linkedin = ele[:linkedin]
     end
 
