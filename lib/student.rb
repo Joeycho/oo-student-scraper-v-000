@@ -24,6 +24,7 @@ class Student
     students_array.each do |ele|
       student.name = ele[:name]
       student.location = ele[:location]
+      binding.pry
       self.all << student
     end
 
