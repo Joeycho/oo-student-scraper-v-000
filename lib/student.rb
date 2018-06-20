@@ -6,7 +6,7 @@ class Student
 
   def initialize(student_hash=nil)
 
-    @name = student_hash[:name || nil
+    @name = student_hash[:name] || nil
     @location =  student_hash[:location] || nil
     @twitter = student_hash[:twitter] || nil
     @linkedin = student_hash[:linkedin] || nil
