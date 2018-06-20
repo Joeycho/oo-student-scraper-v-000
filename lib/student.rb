@@ -22,9 +22,9 @@ class Student
   def self.create_from_collection(students_array)
     student = self.new
     students_array.each do |ele|
-      @name = ele[:name]
-      @location = ele[:location]
-
+      student.name = ele[:name]
+      student.location = ele[:location]
+      self.all << student
     end
 
   end
