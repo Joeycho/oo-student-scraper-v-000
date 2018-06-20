@@ -25,7 +25,7 @@ class Student
       student.name = ele[:name]
       student.location = ele[:location]
       binding.pry
-      @@all << student
+    #  @@all << student
     end
 
   end
