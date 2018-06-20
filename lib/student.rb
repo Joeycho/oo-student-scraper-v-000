@@ -6,15 +6,15 @@ class Student
 
   def initialize(student_hash=nil)
 
-    @name = student_hash[:name]
-    @location =  student_hash[:location]
-    @twitter = student_hash[:twitter]
-    @linkedin = student_hash[:linkedin]
-    @github = student_hash[:github]
-    @blog = student_hash[:blog]
-    @profile_quote = student_hash[:profile_quote]
-    @bio = student_hash[:bio]
-    @profile_url = student_hash[:profile_url]
+    @name = student_hash[:name || nil
+    @location =  student_hash[:location] || nil
+    @twitter = student_hash[:twitter] || nil
+    @linkedin = student_hash[:linkedin] || nil
+    @github = student_hash[:github] || nil
+    @blog = student_hash[:blog] || nil
+    @profile_quote = student_hash[:profile_quote] || nil
+    @bio = student_hash[:bio] || nil
+    @profile_url = student_hash[:profile_url] || nil
 
     @@all << self
   end
