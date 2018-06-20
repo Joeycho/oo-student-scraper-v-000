@@ -48,6 +48,7 @@ class Student
     elsif ele.has_key?('linkedin')
       self.linkedin = ele[:linkedin]
     end
+  end
 
 
   end
