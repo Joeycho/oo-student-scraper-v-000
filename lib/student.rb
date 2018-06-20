@@ -44,7 +44,7 @@ class Student
   #      binding.pry
   #      @@all << student
     end
-    
+
 
   end
 
