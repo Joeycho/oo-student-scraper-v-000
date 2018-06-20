@@ -34,13 +34,12 @@ class Student
 
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |ele|
-      student = self.new
-      student.bio = ele[:bio]
-      student.twitter = ele[:twitter]
-      student.blog = ele[:blog]
-      student.github = ele[:github]
-      student.profile_quote = ele[:profile_quote]
-      student.linkedin = ele[:linkedin]
+      self.bio = ele[:bio]
+      self.twitter = ele[:twitter]
+      self.blog = ele[:blog]
+      self.github = ele[:github]
+      self.profile_quote = ele[:profile_quote]
+      self.linkedin = ele[:linkedin]
     end
 
 
