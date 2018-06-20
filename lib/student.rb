@@ -33,22 +33,19 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    binding.pry
-    attributes_hash
-
-      
+    
       self.bio = attributes_hash[:bio]
-  
+
       self.twitter = attributes_hash[:twitter]
-  
+
       self.blog = attributes_hash[:blog]
-  
+
       self.github = attributes_hash[:github]
-  
+
       self.profile_quote = attributes_hash[:profile_quote]
-  
+
       self.linkedin = attributes_hash[:linkedin]
-  end
+
 
 
   end
