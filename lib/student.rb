@@ -33,6 +33,18 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
+    attributes_array.each do |ele|
+      student = self.new
+      student.bio = ele[:bio]
+      student.twitter = ele[:twitter]
+      student.blog = ele[:blog]
+      student.github = ele[:github]
+      student.profile_quote = ele[:profile_quote]
+      student.linkedin = ele[:linkedin]
+  #      binding.pry
+  #      @@all << student
+    end
+    
 
   end
 
