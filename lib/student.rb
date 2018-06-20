@@ -15,7 +15,7 @@ class Student
     @bio = student_hash[:bio]
     @profile_url = student_hash[:profile_url]
 
-    self.class.all << student_hash
+    @@all << student_hash
   end
 
   def self.create_from_collection(students_array)
