@@ -34,21 +34,20 @@ class Student
 
   def add_student_attributes(attributes_hash)
     binding.pry
-    attributes_hash.each do |ele|
+    attributes_hash
 
-      if ele.has_key?('bio')
-      self.bio = ele[:bio]
-    elsif ele.has_key?('twitter')
-      self.twitter = ele[:twitter]
-    elsif ele.has_key?('blog')
-      self.blog = ele[:blog]
-    elsif ele.has_key?('github')
-      self.github = ele[:github]
-    elsif ele.has_key?('profile_quote')
-      self.profile_quote = ele[:profile_quote]
-    elsif ele.has_key?('linkedin')
-      self.linkedin = ele[:linkedin]
-    end
+      
+      self.bio = attributes_hash[:bio]
+  
+      self.twitter = attributes_hash[:twitter]
+  
+      self.blog = attributes_hash[:blog]
+  
+      self.github = attributes_hash[:github]
+  
+      self.profile_quote = attributes_hash[:profile_quote]
+  
+      self.linkedin = attributes_hash[:linkedin]
   end
 
 
